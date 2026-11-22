@@ -31,7 +31,9 @@ object Prefs {
     fun setVibrate(c: Context, v: Boolean) = sp(c).edit().putBoolean("vibrate", v).apply()
 
     // Aliases used by MainActivity.kt
-    fun getStatus(c: Context): String = if (active(c)) "Active" else "Stopped"
+    fun getStatus(c: Context): String = sp(c).getString("status", "STOPPED") ?: "STOPPED"
+    fun setStatus(c: Context, s: String) = sp(c).edit().putString("status", s).apply()
+
     fun getNextFireAt(c: Context): Long = nextTrigger(c)
     fun getToneUri(c: Context): String? = toneUri(c)
     fun setIntervalMillis(c: Context, millis: Long) = setDuration(c, millis / 60_000L)
