@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">5 MIN</string>
+    <string name="status_active">نشط</string>
+    <string name="status_stopped">متوقف</string>
+    <string name="label_remaining">المتبقي</string>
+    <string name="label_duration">مدة التكرار</string>
+    <string name="label_hours">ساعات</string>
+    <string name="label_minutes">دقائق</string>
+    <string name="hint_number">أدخل الرقم</string>
+    <string name="btn_apply">ابدأ / تطبيق</string>
+    <string name="btn_tone">اختيار نغمة مخصصة</string>
+    <string name="btn_preview">معاينة النغمة</string>
+    <string name="btn_final_stop">إيقاف نهائي</string>
+    <string name="btn_snooze">غفوة 5 دقائق</string>
+    <string name="btn_stop_sound">إيقاف الصوت</string>
+    <string name="btn_cancel_snooze">إلغاء الغفوة</string>
+    <string name="label_vibrate">الاهتزاز</string>
+    <string name="label_default_tone">النغمة: افتراضية</string>
+    <string name="label_custom_tone">النغمة: مخصصة</string>
+    <string name="label_ringing_now">المنبه يرن الآن</string>
+    <string name="label_snoozing">في وضع الغفوة</string>
+    <string name="label_countdown">حتى الرنين التالي</string>
+    <string name="label_inactive">لا يوجد منبه نشط</string>
+    <string name="label_alarm_status">حالة المنبه</string>
+    <string name="widget_duration">المدة: %1$d دقيقة</string>
+    <string name="widget_remaining">%1$02d:%2$02d</string>
+    <string name="toast_invalid">أدخل رقماً أكبر من صفر</string>
+    <string name="channel_countdown">العد التنازلي</string>
+    <string name="channel_ring">رنين المنبه</string>
+</resources>
