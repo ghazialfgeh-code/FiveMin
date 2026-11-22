@@ -1,4 +1,4 @@
-package com.fivemin
+ package com.fivemin
 
 import android.content.Context
 
@@ -29,4 +29,11 @@ object Prefs {
 
     fun vibrate(c: Context): Boolean = sp(c).getBoolean("vibrate", true)
     fun setVibrate(c: Context, v: Boolean) = sp(c).edit().putBoolean("vibrate", v).apply()
+
+    // Aliases used by MainActivity.kt
+    fun getStatus(c: Context): String = if (active(c)) "Active" else "Stopped"
+    fun getNextFireAt(c: Context): Long = nextTrigger(c)
+    fun getToneUri(c: Context): String? = toneUri(c)
+    fun setIntervalMillis(c: Context, millis: Long) = setDuration(c, millis / 60_000L)
+    fun setVibrationEnabled(c: Context, v: Boolean) = setVibrate(c, v)
 }
